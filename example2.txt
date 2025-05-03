@@ -1,0 +1,7 @@
+Opening the File: The program first opens the file example.txt using FileInputStream.
+Buffering the Input: It then wraps the FileInputStream with a BufferedInputStream, 
+which allows the program to read larger chunks of data efficiently rather than byte by byte.
+Reading Data: The while loop reads each byte from the buffer (using bis.read()), 
+converts it to a character, and prints it out. The loop continues until the entire file is read.
+Closing Streams: Once all data has been read, the BufferedInputStream (and the underlying FileInputStream)
+ is closed to release the resources.
